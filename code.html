@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tracking Items | Diplomatic Courier</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/why me.jpeg" rel="icon">
+  <link href="assets/img/why me.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    .table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    .th,
+    .td {
+        text-align: center;
+        padding: 16px;
+    }
+
+    .th:first-child,
+    .td:first-child {
+        text-align: left;
+    }
+
+    .tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    .fa-check {
+        color: green;
+    }
+
+    .fa-remove {
+        color: red;
+    }
+
+    .flaxdiv {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: 0px 30px 30px 30px;
+    }
+
+    .total2 {
+        margin-top: 10px;
+        padding-left: 10px;
+        color: rgb(252, 103, 49);
+        font-weight: bold;
+    }
+
+
+.col-9 p{
+  color: red;
+}
+.done{
+    color: red;
+}
+
+    .title {
+        color: #2756ff;
+        font-weight: 600;
+        margin-bottom: 2vh;
+        padding: 0 8%;
+        font-size: initial;
+    }
+
+    #details {
+        font-weight: 400;
+    }
+
+    .info {
+        padding: 5% 8%;
+    }
+
+    .info .col-5 {
+        padding: 0;
+    }
+
+    #heading {
+        color: grey;
+        line-height: 6vh;
+    }
+
+    .pricing {
+        background-color: #ddd3;
+        padding: 2vh 8%;
+        font-weight: 400;
+        line-height: 2.5;
+    }
+
+    .pricing .col-3 {
+        padding: 0;
+    }
+
+    .total {
+        padding: 2vh 8%;
+        color: #2756ff;
+        font-weight: bold;
+    }
+
+    .total .col-3 {
+        padding: 0;
+    }
+
+    .footers {
+        padding: 0 8%;
+        font-size: x-small;
+        color: black;
+    }
+
+    .footers img {
+        height: 5vh;
+        opacity: 0.2;
+    }
+
+    .footers a {
+        color: rgb(252, 103, 49);
+    }
+
+    .footers .col-10,
+    .col-2 {
+        display: flex;
+        padding: 3vh 0 0;
+        align-items: center;
+    }
+    .col-10 {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .footers .row {
+        margin: 0;
+    }
+
+    #progressbar {
+        margin-bottom: 3vh;
+        overflow: hidden;
+        color: rgb(252, 103, 49);
+        padding-left: 0px;
+        margin-top: 3vh
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: x-small;
+        width: 25%;
+        float: left;
+        position: relative;
+        font-weight: 400;
+        color: rgb(160, 159, 159);
+    }
+
+    #progressbar #step1:before {
+        content: "";
+        color: rgb(252, 103, 49);
+        width: 5px;
+        height: 5px;
+        margin-left: 0px !important;
+        /* padding-left: 11px !important */
+    }
+
+    #progressbar #step2:before {
+        content: "";
+        color: #fff;
+        width: 5px;
+        height: 5px;
+        margin-left: 32%;
+    }
+
+    #progressbar #step3:before {
+        content: "";
+        color: #fff;
+        width: 5px;
+        height: 5px;
+        margin-right: 32%;
+        /* padding-right: 11px !important */
+    }
+
+    #progressbar #step4:before {
+        content: "";
+        color: #fff;
+        width: 5px;
+        height: 5px;
+        margin-right: 0px !important;
+        /* padding-right: 11px !important */
+    }
+
+    #progressbar li:before {
+        line-height: 29px;
+        display: block;
+        font-size: 12px;
+        background: #ddd;
+        border-radius: 50%;
+        margin: auto;
+        z-index: -1;
+        margin-bottom: 1vh;
+    }
+
+    #progressbar li:after {
+        content: '';
+        height: 2px;
+        background: #ddd;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        margin-bottom: 2vh;
+        top: 1px;
+        z-index: 1;
+    }
+
+    .progress-track {
+        padding: 0 8%;
+    }
+
+    #progressbar li:nth-child(2):after {
+        margin-right: auto;
+    }
+
+    #progressbar li:nth-child(1):after {
+        margin: auto;
+    }
+
+    #progressbar li:nth-child(3):after {
+        float: left;
+        width: 68%;
+    }
+
+    #progressbar li:nth-child(4):after {
+        margin-left: auto;
+        width: 132%;
+    }
+
+    #progressbar li.active {
+        color: black;
+    }
+
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: rgb(252, 103, 49);
+    }
+
+    .ideing::before {
+        content: "\A";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #b83b3b;
+        display: inline-block;
+        margin-right: 8px;
+    }
+</style>
+</head>
+
+<body>
+
+ 
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Diplomatic <span style="color: #2756ff;">Courier</span>   </h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Tracking</a></li>
+          <li class="dropdown"><a href="#"><span>Shipping</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="service-details.html">Create a Shipment</a></li>
+              <li><a href="service-details.html">Picking & Shipping Supplies</a></li>
+              <li><a href="service-details.html">Freight</a></li>
+              <li><a href="service-details.html">International Shipping Guide</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="get-a-quote" href="get-a-quote.html">Sign Up or Log In</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Shipment information
+              </h2>
+              <p>Track multiple shipments, run reports, and get access to documents and images in one convenient place—an easy-to-use, personalized tracking dashboard.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Shipment information
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <section class="sample-page">
+      <div class="container" data-aos="fade-up">
+       
+
+        <div class="forcourierdetials">
+
+          <div class="font">
+      
+              <div class="card">
+                  
+                  <div class="info">
+                    <div class="total">
+                      Couier  information
+                  </div>
+                      <div class="row">
+                          <div class="col-7">
+                              <span id="heading">Date</span><br>
+                              <span id="details">10 October 2018</span>
+                          </div>
+                          <div class="col-5 pull-right">
+                              <span id="heading">Order No.</span><br>
+                              <span id="details">012j1gvs356c</span>
+                          </div>
+                          <div class="col-7">
+                              <span id="heading">Statue</span><br>
+                              <span id="details" class="ideing">Couier picked up</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pricing">
+                      <div class="total">
+                          Receiver information
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver name:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">wang wei</span>
+                          </div>
+                      </div>
+                      <div class="row">
+      
+                          <div class="col-9">
+                              <span id="name">Country:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">iraq</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver address:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">290 iraq 4 R road</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver email:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">sundaydaniel@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="pricing" style="margin-top: 28px;">
+                      <div class="total">
+                          Sender information
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver name:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">wang wei</span>
+                          </div>
+                      </div>
+                      <div class="row">
+      
+                          <div class="col-9">
+                              <span id="name">Country:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">iraq</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver address:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">290 iraq 4 R road</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-9">
+                              <span id="name">Receiver email:</span>
+                          </div>
+                          <div class="col-3">
+                              <span id="price">sundaydaniel@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+      
+      
+                  <h5 class="total" style="text-align: center;">Weight/Charge</h5>
+      
+      
+                  <div class="flaxdiv">
+      
+                      <table class="table">
+                          <tr class="tr">
+                              <th class="th" style="width:50%; font-weight: 700;">Features</th>
+                              <th class="th" style="font-weight: 700;">Weight</th>
+                              <th class="th" style="font-weight: 700;">Price</th>
+                          </tr>
+                          <tr class="tr">
+                              <td class="td">Quality</td>
+                              <td class="td">1(One)</td>
+                              <td class="td"><i class="fa fa-remove"></i></td>
+      
+                          </tr>
+                          <tr class="tr">
+                              <td class="td">Weight</td>
+                              <td class="td">30KG</td>
+                              <td class="td"><i class="fa fa-remove"></i></td>
+                          </tr>
+                          <tr class="tr">
+                              <td class="td">Delivery charge</td>
+                              <td class="td"><i class="fa fa-remove"></i></td>
+                              <td class="td">&#x24;7600</td>
+                          </tr>
+                          <tr class="tr">
+                              <td class="td">Value added tax (VAT)</td>
+                              <td class="td"><i class="fa fa-remove"></i></td>
+                              <td class="td">&#x24;2100</td>
+                          </tr>
+      
+                      </table>
+                  </div>
+      
+      
+      
+      
+                  <div class="total">
+      
+                      <div class="row">
+                          <div class="col-9">
+                              <p>(You have to pay your shipping fee, before we can deliver the
+                                  consignment box to you)</p>
+                          </div>
+                          <div class="col-3 done">TOTAL: <big>&#x24;9700.99</big></div>
+                      </div>
+                  </div>
+                  <div class="tracking">
+                      <div class="title">Tracking Order</div>
+                  </div>
+                  <div class="progress-track">
+                      <ul id="progressbar">
+                          <li class="step0 active " id="step1">Ordered</li>
+                          <li class="step0 active text-center" id="step2">Shipped</li>
+                          <li class="step0 active text-right" id="step3">On the way</li>
+                          <li class="step0 text-right" id="step4">Delivered</li>
+                      </ul>
+                  </div>
+      
+      
+                  <div class="footers">
+                      <div class="row">
+                          <div class="col-10">Want any help? Please &nbsp;<a href="contact.html">
+                                  contact us</a></div>
+                      </div>
+      
+      
+                  </div>
+              </div>
+      
+          </div>
+      
+      </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span>Diplomatic <span style="color: #2756ff;">Courier</span> </span>
+        </a>
+        <p><strong>Diplomatic Courier money-back guarantee
+        </strong>  We offer a money-back guarantee for select services. This guarantee may be suspended, modified, or revoked. Please check money-back guarantee for the latest status of our money-back guarantee.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>OUR COMPANY
+        </h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us
+          </a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>MORE FROM DIPLOMATIC COURIER</h4>
+        <ul>
+          <li><a href="#">Diplomatic Courier Logistics
+          </a></li>
+          <li><a href="#">Diplomatic Courier Developer Portal
+          </a></li>
+          <li><a href="#">Diplomatic Courier Cross Border
+
+          </a></li>
+          <li><a href="#">Diplomatic Courier Compatible
+
+          </a></li>
+          <li><a href="#">Corporate Responsibility
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          A108 Adam Street <br>
+          New York, NY 535022<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3342763624<br>
+          <strong>Email:</strong> diplomaticcourier858@gmail.com
+          <br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy;  Diplomatic Courier  1995-2023     </div>
+  </div>
+
+</footer><!-- End Footer -->
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
